@@ -21,7 +21,7 @@ int main()
     int n;
     printf("Enter the Perfect Square number: ");
     scanf("%d", &n);
-    printf("%d", printSumOdd(n));
+    printf("%d\n", printSumOdd(n));
 
     return 0;
 }

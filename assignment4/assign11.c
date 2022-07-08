@@ -11,13 +11,15 @@ int factorial(int n)
     }
     return fact;
 }
+
 int main()
 {
-    int n = 7, sum = 0;
+    int n = 7;
+	float sum = 0; 
     for (int i = 1; i <= n; i++)
     {
-        sum = sum + (i / factorial(i));
+        sum = sum +((float)i / (float)factorial(i));
     }
-    printf("%d", sum);
+    printf("%f\n", sum);
     return 0;
 }

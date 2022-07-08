@@ -1,9 +1,10 @@
 // Write a C program to print the first n numbers of the Fibonacci sequence. The Fibonacci sequence is constructed by adding the last two numbers of the sequence so far to get the next number in the sequence. The first and second numbers of the sequence are defined as 0 and 1. We get:
 // 0, 1, 1, 2, 3, 5, 8, 13, 21…
 
-#include <iostream>
+#include <stdio.h>
+//with recursion
 
-int fibonacci_numbers(int n)
+int fibonacci(int n)
 {
     if (n == 0)
     {
@@ -15,7 +16,7 @@ int fibonacci_numbers(int n)
     }
     else
     {
-        return fibonacci_numbers(n - 2) + fibonacci_numbers(n - 1);
+        return fibonacci(n - 2) + fibonacci(n - 1);
     }
 }
 
@@ -26,7 +27,7 @@ int main()
     scanf("%d", &n);
     for (int i = 0; i < n; i++)
     {
-        printf("%d\n", fibonacci_numbers(i));
+        printf("%d\n", fibonacci(i));
     }
     return 0;
 }

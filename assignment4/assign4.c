@@ -20,9 +20,9 @@ int main()
     }
 
     if (result == n)
-        printf("%d is an Armstrong number.", n);
+        printf("%d is an Armstrong number.\n", n);
     else
-        printf("%d is not an Armstrong number.", n);
+        printf("%d is not an Armstrong number.\n", n);
 
     return 0;
 }
